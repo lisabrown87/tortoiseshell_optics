@@ -1,0 +1,215 @@
+html {
+  font-size: 18px;
+}
+
+
+
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+
+header {
+background-image: url(../images/glasses-bg.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding-top: 1rem;
+height: 30rem;
+}
+
+
+nav div {
+    display: flex;
+    align-items: center;
+  }
+
+nav {
+  padding: 1rem 0;
+    background-color: cadetblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone-menu {
+  display: none;
+}
+
+ul li {
+    display: inline;
+    padding: 0 1rem;
+  }
+
+  nav img {
+    height: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.main-banner {
+  background-color: white;
+    padding: 0.75rem 5rem;
+    display: inline-block;
+    margin-top: 10rem;
+    margin-right: -2rem;
+    line-height: 2.4rem;
+}
+
+
+.main-banner h1 {
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 2rem;
+}
+
+.flex  {
+  display: flex;
+}
+
+header .flex {
+    justify-content: flex-end;
+  }
+
+  .supporting {
+    display: flex;
+    justify-content: center;
+  }
+
+  .exam img {
+    width: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .fitting img, .delivery img  {
+    width: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 3rem;
+    width: 5rem;
+    height: 8rem;
+  }
+
+ .info p {
+        padding: 1rem 0;
+      }
+
+      .title {
+        background-color: cadetblue;
+        padding: 0.5rem 1.25rem;
+        font-weight: bold;
+        color: white;
+        max-width: 10rem;
+    }
+
+
+      .info {
+        width: 35%;
+    margin-right: 5%;
+    margin-bottom: 4rem;
+      }
+
+      footer {
+    background-color: azure;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+      }
+
+      footer img {
+    height: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+
+/* tablet rules */
+
+@media only screen and (max-width: 1072px) {
+
+.container {
+  max-width: 100%;
+}
+
+
+.main-banner h1 {
+  font-size: 1.33rem;
+}
+
+.main-banner {
+  padding: 0.75rem 4rem;
+  margin-top: 5rem;
+  margin-right: 2rem;
+}
+
+header {
+  padding-top: 0;
+height: 22rem;
+}
+
+}
+
+/* phone rules */
+
+@media only screen and (max-width: 642px) {
+
+  .container {
+    max-width: 100%;
+  }
+
+
+  .main-banner h1 {
+    font-size: 1.33rem;
+  }
+
+  .main-banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  header {
+  background-position: 20%;
+  height: 17rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .phone-menu {
+    display: block;
+  }
+
+section {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.info {
+    width: 80%;
+
+}
+
+footer div {
+  display: none;
+}
+
+footer  {
+   justify-content: center;
+}
